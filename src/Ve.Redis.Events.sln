@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ve.Redis.Events.Common", "Ve.Redis.Events.Common\Ve.Redis.Events.Common.csproj", "{F8B3F10B-C806-4D2E-ADCD-F0CEFBD5904C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ve.Redis.Events.App.Console", "Ve.Redis.Events.App.Console\Ve.Redis.Events.App.Console.csproj", "{0F85F1B6-4751-4C94-A57F-7D6BDB6FF59B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ve.Redis.Events.App.Monitor", "Ve.Redis.Events.App.Monitor\Ve.Redis.Events.App.Monitor.csproj", "{4FBB8DA0-785F-4E1B-9331-472FD4AE0C2C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8B3F10B-C806-4D2E-ADCD-F0CEFBD5904C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B3F10B-C806-4D2E-ADCD-F0CEFBD5904C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B3F10B-C806-4D2E-ADCD-F0CEFBD5904C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B3F10B-C806-4D2E-ADCD-F0CEFBD5904C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F85F1B6-4751-4C94-A57F-7D6BDB6FF59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F85F1B6-4751-4C94-A57F-7D6BDB6FF59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F85F1B6-4751-4C94-A57F-7D6BDB6FF59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F85F1B6-4751-4C94-A57F-7D6BDB6FF59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBB8DA0-785F-4E1B-9331-472FD4AE0C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBB8DA0-785F-4E1B-9331-472FD4AE0C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBB8DA0-785F-4E1B-9331-472FD4AE0C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBB8DA0-785F-4E1B-9331-472FD4AE0C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
