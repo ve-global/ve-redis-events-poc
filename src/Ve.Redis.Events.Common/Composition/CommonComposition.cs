@@ -1,6 +1,7 @@
 ﻿using System;
 using LightInject;
 using StackExchange.Redis;
+using Ve.Redis.Events.Common.Events;
 using Ve.Redis.Events.Common.Persistance;
 
 namespace Ve.Redis.Events.Common.Composition
@@ -13,6 +14,7 @@ namespace Ve.Redis.Events.Common.Composition
 
             serviceRegistry.Register<IConnectionMultiplexer>(factory => ConnectionMultiplexer.Connect(redis));
             serviceRegistry.Register(typeof(IRepository<>), typeof(Repository<>));
+            serviceRegistry.Register<IMonitor, Monitor>();
         }
     }
 }
