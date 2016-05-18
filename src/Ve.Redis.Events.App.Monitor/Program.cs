@@ -14,7 +14,6 @@ namespace Ve.Redis.Events.App.Monitor
             container.RegisterFrom<CommonComposition>();
 
             var monitor = container.GetInstance<IMonitor>();
-
             monitor.Subscribe("__keyspace@0__:*", (channel, value) =>
             {
                 Console.WriteLine("channel: {0} | value: {1}", channel, value);
